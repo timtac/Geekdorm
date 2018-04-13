@@ -1,0 +1,49 @@
+<% include _header %>
+<div class="center_content">
+       	<div class="left_content">
+            <div class="title"><span class="title_icon"><img src="images/bullet1.gif" alt="" title="" /></span>My cart</div>
+        
+        	<div class="feat_prod_box_details">
+        
+        <% if(products != null){ %>
+
+            <table class="cart_table">
+            	<% products.forEach(function(product) { %>
+	            	<tr class="cart_title">
+	                	
+	                	<td>Item name</td>
+	                    <td>Unit price</td>
+	                    <td>Qty</td>
+	                    <td>Total</td>
+	                    <td></td>               
+	                </tr>
+	                
+	            	<tr>
+	                	
+	                	<td><%= product.item.title %></td>
+	                    <td>$<%= product.item.price %></td>
+	                    <td><%= product.item.qty %></td>
+	                    <td>$<%= product.price %></td>
+	                    <a href=""><input type="botton" class="btn btn-default" value="Remove" /></a>
+	                </tr>          
+            	
+                <% }) %>
+
+                <tr>
+                <td colspan="4" class="cart_total"><span class="red">TOTAL:</span></td>
+                <td> $<%= totalPrice %> </td>                
+                </tr>                  
+            
+            </table>
+            <a href="#" class="continue">&lt; continue</a>
+            <a href="#" class="checkout">checkout &gt;</a>
+            
+        <% } %>
+             
+            
+            </div>
+		<div class="clear"></div>
+    </div><!--end of left content-->
+<% include _rightpanel %>
+
+<% include _footer %>

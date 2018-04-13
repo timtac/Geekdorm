@@ -1,0 +1,31 @@
+{
+  "name": "books_sales_app",
+  "version": "1.0.0",
+  "description": "application to promote poet",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm start",
+    "start": "node app.js"
+  },
+  "author": "akintolu_timilehin",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.17.2",
+    "busboy-body-parser": "*",
+    "connect-assets": "^5.4.0",
+    "connect-flash": "0.1.1",
+    "connect-mongo": "^2.0.0",
+    "cookie-parser": "^1.3.2",
+    "logger": "*",
+    "ejs": "^1.0.0",
+    "express": "^4.15.3",
+    "express-enforces-ssl": "^1.1.0",
+    "express-session": "^1.7.6",
+    "helmet": "^3.6.1",
+    "mongoose": "^4.10.1",
+    "nodemon": "^1.11.0",
+    "passport": "^0.2.0",
+    "passport-local": "^1.0.0"
+  }
+}
