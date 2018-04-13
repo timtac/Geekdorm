@@ -15,7 +15,7 @@ var SetUpPassport = require("./auth/setuppassport");
 
 var app = express();
 
-mongoose.connect("mongodb://localhost:27017/naijageekdom");
+mongoose.connect("mongodb://timtac:telecom22@ds133856.mlab.com:33856/geekdorm");
 var port = process.env.PORT || 3000;
 
 app.set("views", path.join(__dirname, "views"));
